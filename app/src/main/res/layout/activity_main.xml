@@ -24,12 +24,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="JA"
-            android:hint="Pick me"/>
+            android:hint="Pick me"
+            android:onClick="onJaButtonClick"
+            android:id="@+id/answer_ja_button"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NEJ"/>
+            android:text="NEJ"
+            android:onClick="onNejButtonClick"
+            android:id="@+id/answer_nej_button"/>
 
         </LinearLayout>
 
@@ -42,7 +46,8 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:inputType="textPersonName"
-            android:text="@string/input_user_name"/>
+            android:text="@string/input_user_name"
+            android:id="@+id/users_name_edit_text"/>
 
     </LinearLayout>
 

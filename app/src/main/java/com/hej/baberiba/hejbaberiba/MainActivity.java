@@ -4,14 +4,25 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private Button answerJaButton, answerNoButton;
+    private EditText usersNameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        answerJaButton = (Button) findViewById(R.id.answer_ja_button);
+        answerNoButton = (Button) findViewById(R.id.answer_nej_button);
+        usersNameEditText = (EditText) findViewById(R.id.users_name_edit_text);
     }
 
 
@@ -35,5 +46,21 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onJaButtonClick(View view) {
+
+        String usersName = String.valueOf(usersNameEditText.getText());
+        String yourYesResponse = "Bra jobbat, " + usersName;
+
+        Toast.makeText(this, yourYesResponse, Toast.LENGTH_SHORT).show();
+    }
+
+    public void onNejButtonClick(View view) {
+
+        String usersName = String.valueOf(usersNameEditText.getText());
+        String yourNoResponse = "Bra jobbat, " + usersName;
+
+        Toast.makeText(this, yourNoResponse, Toast.LENGTH_SHORT).show();
     }
 }
