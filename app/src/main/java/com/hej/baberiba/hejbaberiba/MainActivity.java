@@ -59,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
     public void onNejButtonClick(View view) {
 
         String usersName = String.valueOf(usersNameEditText.getText());
-        String yourNoResponse = "Bra jobbat, " + usersName;
+        String yourNoResponse = "Du e fan sämst, " + usersName;
 
         Toast.makeText(this, yourNoResponse, Toast.LENGTH_SHORT).show();
     }
