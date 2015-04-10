@@ -1,3 +1,4 @@
 # hej baberiba
 
-strunta i mig
+Clona gärna ner mig och pusha upp lite saker.
+Jag vill bli pushad.
